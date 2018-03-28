@@ -227,7 +227,7 @@ class SettingsDialog:
                 AAAAAAAAAAAAAAAAAAAAAAAA//gf///wD///8A8/+GAGH/AAAA/gAAAHwAAAB+AAAAfgAAAH8AAAD/AA\
                 AA/gAAAHgAfgAQAP8AAAD/AAAA/wAAAP8AAAD/AAAAfwAAAD4AHgAAAH8AAAD/AAAA/gAAAH4AAAB+AA\
                 AAPgAAAH8AAAD/hgBh/88A////AP///4H/8="
-
+         
         icodata = base64.b64decode(icon)  # Decode base64 image
         temfile = "icon.ico"  # Create temporary file
         icofile = open(temfile, "wb")  # Open temporary file
