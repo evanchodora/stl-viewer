@@ -1,2 +1,2 @@
-# stl-viewer
+# viewer
 Python-based STL viewer
