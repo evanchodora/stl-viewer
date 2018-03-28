@@ -18,7 +18,7 @@ def orient(geometry, width, height):
         x_trans = 0 - 0.5*(max_size[0]+min_size[0])  # Avg X distance from the origin
         y_trans = 0 - 0.5*(max_size[1]+min_size[1])  # Avg Y distance from the origin
         z_trans = 0 - 0.5*(max_size[2]+min_size[2])  # Avg Z distance from the origin
-        geometry = gtransform.translate(geometry, x_trans, y_trans, z_trans)  # Translate object accordingly
+        geometry = gtransform.translate(geometry, x_trans, y_trans, z_trans)  # Translate object accordingly to origin
 
         # Compute scaling to center object in the screen
         geometry_scale, _ = gtransform.perspective('iso', geometry, None, None, None)  # Apply perspective
