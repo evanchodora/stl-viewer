@@ -10,11 +10,12 @@ Functions for the various geometric transformations and perspectives
  - Orthographic views (6)
 
 Evan Chodora, 2018
+https://github.com/evanchodora/viewer
 echodor@clemson.edu
 '''
 
 
-# Determine the transform that should be applied to the geometry
+# Determine the transform that should be applied to the geometry (data is specific data for each transformation)
 def transform(geometry, normals, transtype, data):
         if transtype == 'translate':
                 geometry = translate(geometry, data[0], data[1], data[2])
@@ -88,7 +89,7 @@ def ortho(geometry, normals, view):
         mat = np.identity(4)  # Initialize transformation matrix
 
         # Determine which of the 6 orthographic views is requested and apply the transformation/rotation
-        # Views are referenced according to the original geometry orientation (front = +Z, top = +Y, right = +Z, etc.)
+        # Views are referenced according to the original geometry orientation (front = +Z, top = +Y, right = +X, etc.)
         if view == 'top':
                 mat[1, 1] = 0
                 geometry = np.dot(geometry, mat)

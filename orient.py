@@ -3,9 +3,11 @@ import gtransform
 
 '''
 Code to orient the initial geometry centered upon the geometric origin
-Then scales the object to fit within a window of the width and height supplied
+Then scales the object to fit within a window of the width and height supplied based on an isometric perspective
+and a supplied screen width and height in pixels
 
 Evan Chodora, 2018
+https://github.com/evanchodora/viewer
 echodor@clemson.edu
 '''
 
