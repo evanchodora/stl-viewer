@@ -8,7 +8,7 @@ Keyboard Bindings:
 | Transformation| Keys          |
 | ------------- |:-------------:|
 | Rotate        | Arrow Keys    |
-| Zoom          | J,            |
+| Zoom          | J, L          |
 | Pan           | W, A, S, D    |
 
 
