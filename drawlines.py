@@ -31,7 +31,9 @@ def draw_lines(geometry, normal, camera, view, width, height):
                         # If plotted but not camera-facing - must be for hidden views and rearwards
                         if dot >= 0.0:
                                 front = 0
+                        # Store the three points for face "f"
                         xy = [geometry[3*(f+1)-3].tolist(), geometry[3*(f+1)-2].tolist(), geometry[3*(f+1)-1].tolist()]
+                        # Store the 3 lines that make up face "f"
                         line = [[xy[0][0], xy[0][1], xy[1][0], xy[1][1]],
                                 [xy[1][0], xy[1][1], xy[2][0], xy[2][1]],
                                 [xy[2][0], xy[2][1], xy[0][0], xy[0][1]]]
